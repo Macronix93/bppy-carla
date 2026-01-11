@@ -1,0 +1,16 @@
+from z3 import EnumSort
+
+Actions, (LANE_LEFT, IDLE, LANE_RIGHT, FASTER, SLOWER) = EnumSort(
+    "Actions", ["LANE_LEFT", "IDLE", "LANE_RIGHT", "FASTER", "SLOWER"]
+)
+action_map = {LANE_LEFT: 0, IDLE: 1, LANE_RIGHT: 2, FASTER: 3, SLOWER: 4}
+
+
+# Macro Maneuvers
+MacroActions, (FOLLOW_VEHICLE, DRIVE, OVERTAKE, CUT_IN, APPROACH_AND_MATCH, FOLLOW_AT_SPEED,
+               EMERGENCY_BRAKE, CHANGE_LANE) = EnumSort(
+    "MacroActions", ["FOLLOW_VEHICLE", "DRIVE", "OVERTAKE", "CUT_IN", "APPROACH_AND_MATCH", "FOLLOW_AT_SPEED",
+                     "EMERGENCY_BRAKE", "CHANGE_LANE"]
+)
+action_map_macro = {FOLLOW_VEHICLE: 0, DRIVE: 1, OVERTAKE: 2, CUT_IN: 3, APPROACH_AND_MATCH: 4, FOLLOW_AT_SPEED: 5,
+                    EMERGENCY_BRAKE: 6, CHANGE_LANE: 7}

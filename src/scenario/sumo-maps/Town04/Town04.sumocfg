@@ -1,0 +1,6 @@
+<configuration>
+   <input>
+       <net-file value="Town04.net.xml"/>
+       <route-files value="Town04.rou.xml"/>
+  </input>
+</configuration>

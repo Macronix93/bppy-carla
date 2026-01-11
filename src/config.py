@@ -1,0 +1,27 @@
+# GLOBAL
+CURRENT_SIM = "carla"
+ACTION_SPACE = "micro"
+GLOBAL_FPS = 20
+GLOBAL_FIXED_DELTA_SECONDS = 1.0 / GLOBAL_FPS  # Zeit pro Simulationsschritt
+GLOBAL_MAX_STEPS = 1000
+
+# CARLA Konfiguration
+CARLA_HOST = "localhost"
+CARLA_PORT = 2000
+CARLA_TIMEOUT = 20.0
+CARLA_QUALITY = "Epic"  # "Low" oder "Epic"
+CARLA_DEBUG = False
+CARLA_GUI = True
+CARLA_SPECTATE = 0 # Vehicle ID, die man beobachten möchte
+CARLA_SPECTATE_MODE = "topdown" # "topdown" oder "thirdperson"
+
+# SUMO Konfiguration
+SUMO_DELAY = "1000"
+SUMO_LATERAL_RESOLUTION = "0.1"
+SUMO_STEP_LENGTH = GLOBAL_FIXED_DELTA_SECONDS
+SUMO_TIME_TO_TELEPORT = "-1"
+SUMO_COLLISION_ACTION = "warn"
+
+# Highway-Env Konfiguration
+HIGHWAY_SIMULATION_FREQUENCY = GLOBAL_FPS
+HIGHWAY_POLICY_FREQUENCY = 5

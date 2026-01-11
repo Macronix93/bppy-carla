@@ -1,0 +1,8 @@
+bppy
+z3-solver
+gymnasium
+numpy
+traci
+psutil
+highway-env
+carla

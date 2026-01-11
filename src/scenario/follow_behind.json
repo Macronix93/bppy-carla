@@ -1,0 +1,100 @@
+{
+  "seed": 0,
+
+  "carla": {
+    "map_name": "Town04"
+  },
+
+  "sumo": {
+    "config_path": "sumo-maps/autobahn/autobahn.sumocfg"
+  },
+
+  "highway": {
+    "id": "highway-v0",
+    "render_mode": "rgb_array",
+    "lanes_count": 3,
+    "screen_width": 1200,
+    "screen_height": 150
+  },
+
+  "vehicles": {
+
+    "veh_manual_1": {
+      "class": "controllable",
+      "color": [255, 0, 0],
+      "smt_var": "v1_action",
+
+      "carla": {
+        "blueprint": "vehicle.audi.tt",
+        "spawn_index": 65,
+        "initial_speed": 16.0
+      },
+
+      "sumo": {
+        "route": ["entry", "longEdge", "exit", "exit2"],
+        "typeID": "manual",
+        "depart_time": 0,
+        "depart_pos": 0.0,
+        "depart_lane": 1,
+        "depart_speed": "avg",
+        "lane_change_mode": 0,
+        "speed_mode": 0
+      },
+
+      "highway": {
+        "v_index": 0
+      }
+    },
+
+    "veh_manual_2": {
+      "class": "controllable",
+      "color": [0, 255, 0],
+      "smt_var": "v2_action",
+
+      "carla": {
+        "blueprint": "vehicle.audi.tt",
+        "spawn_index": 283,
+        "initial_speed": 16.0
+      },
+
+      "sumo": {
+        "route": ["entry", "longEdge", "exit", "exit2"],
+        "typeID": "manual",
+        "depart_time": 0,
+        "depart_pos": 45.0,
+        "depart_lane": 1,
+        "depart_speed": "avg",
+        "lane_change_mode": 0,
+        "speed_mode": 0
+      },
+
+      "highway": {
+        "v_index": 2
+      }
+    },
+
+    "vut": {
+      "class": "npc",
+      "color": [0, 0, 255],
+
+      "carla": {
+        "blueprint": "vehicle.audi.tt",
+        "spawn_index": 15,
+        "initial_speed": 20.0
+      },
+
+      "sumo": {
+        "route": ["entry", "longEdge", "exit", "exit2"],
+        "typeID": "vut",
+        "depart_time": 0,
+        "depart_pos": 15.0,
+        "depart_lane": 0,
+        "depart_speed": "avg"
+      },
+
+      "highway": {
+        "v_index": 1
+      }
+    }
+  }
+}

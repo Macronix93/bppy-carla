@@ -1,0 +1,6 @@
+<configuration>
+   <input>
+       <net-file value="autobahn.net.xml"/>
+       <route-files value="autobahn_2.rou.xml"/>
+  </input>
+</configuration>

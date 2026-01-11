@@ -1,0 +1,95 @@
+{
+  "carla": {
+    "map_name": "Town04"
+  },
+
+  "sumo": {
+    "config_path": "sumo-maps/autobahn/autobahn.sumocfg"
+  },
+
+  "highway": {
+    "id": "highway-v0",
+    "render_mode": "rgb_array"
+  },
+
+  "vehicles": {
+
+    "veh_manual_1": {
+      "class": "controllable",
+      "color": [255, 0, 0],
+      "smt_var": "v1_action",
+
+      "carla": {
+        "blueprint": "vehicle.tesla.model3",
+        "spawn_index": 157,
+        "initial_speed": 16.0
+      },
+
+      "sumo": {
+        "route": ["entry", "longEdge", "exit", "exit2"],
+        "typeID": "manual",
+        "depart_time": 0,
+        "depart_pos": 0.0,
+        "depart_lane": 1,
+        "depart_speed": 16.0,
+        "lane_change_mode": 0,
+        "speed_mode": 0
+      },
+
+      "highway": {
+        "v_index": 0
+      }
+    },
+
+    "veh_manual_2": {
+      "class": "controllable",
+      "color": [0, 255, 0],
+      "smt_var": "v2_action",
+
+      "carla": {
+        "blueprint": "vehicle.tesla.model3",
+        "spawn_index": 152,
+        "initial_speed": 16.0
+      },
+
+      "sumo": {
+        "route": ["entry", "longEdge", "exit", "exit2"],
+        "typeID": "manual",
+        "depart_time": 0,
+        "depart_pos": 60.0,
+        "depart_lane": 0,
+        "depart_speed": 16.0,
+        "lane_change_mode": 0,
+        "speed_mode": 0
+      },
+
+      "highway": {
+        "v_index": 1
+      }
+    },
+
+    "vut": {
+      "class": "npc",
+      "color": [0, 0, 255],
+
+      "carla": {
+        "blueprint": "vehicle.tesla.model3",
+        "spawn_index": 148,
+        "initial_speed": 20.0
+      },
+
+      "sumo": {
+        "route": ["entry", "longEdge", "exit", "exit2"],
+        "typeID": "vut",
+        "depart_time": 0,
+        "depart_pos": 85.0,
+        "depart_lane": 0,
+        "depart_speed": 20.0
+      },
+
+      "highway": {
+        "v_index": 2
+      }
+    }
+  }
+}
